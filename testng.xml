@@ -2,15 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/User/IdeaProjects/TestNG">
+<suite name="All Test Suites">
+    <test verbose="2" name="C:/Users/User/IdeaProjects/TestNG">
+        <parameter name="db" value="SQL"></parameter>
         <classes>
             <class name="org.example.Main">
                 <methods>
                     <include name="test1"/>
                 </methods>
             </class>
-            <class name="org.example.Test2">
+            <class name="org.example.test2">
                 <methods>
                     <include name="test2"/>
                 </methods>
